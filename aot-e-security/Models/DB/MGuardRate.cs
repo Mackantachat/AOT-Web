@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace aot_e_security.Models.DB
+{
+    public partial class MGuardRate
+    {
+        public long Id { get; set; }
+        public DateTime SystemDate { get; set; }
+        public string SystemStaff { get; set; }
+        public DateTime? UpdateDate { get; set; }
+        public string UpdateStaff { get; set; }
+        public string EtlSystem { get; set; }
+        public string EtlTable { get; set; }
+        public string EtlField { get; set; }
+        public string EtlValue { get; set; }
+        public string Code { get; set; }
+        public int? GuardHour { get; set; }
+        public int? GuardRate { get; set; }
+        public int? OvertimeRate { get; set; }
+        public int? OrverRate { get; set; }
+        public string Description { get; set; }
+        public string Status { get; set; }
+    }
+}

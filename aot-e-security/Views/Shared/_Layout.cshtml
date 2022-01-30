@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AOT E-Security - @ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/Assets/plugins/fontawesome-free/css/all.css" />
+    <link rel="stylesheet" href="~/Assets/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.css" />
+    <link rel="stylesheet" href="~/Assets/plugins/icheck-bootstrap/icheck-bootstrap.css" />
+    <link rel="stylesheet" href="~/Assets/dist/css/adminlte.css" />
+    <link rel="stylesheet" href="~/Assets/dist/css/custom-modify.css" />
+    <link rel="stylesheet" href="~/Assets/plugins/overlayScrollbars/css/OverlayScrollbars.css" />
+    @RenderSection("Style", required: false)
+</head>
+<body class="hold-transition sidebar-mini layout-fixed sidebar-collapse">
+    <partial name="TemplateHeader" />
+    <div class="wrapper">
+        <div class="content-wrapper">
+            @RenderBody()
+        </div>
+    </div>
+
+    <script src="~/Assets/plugins/jquery/jquery.js"></script>
+    <script src="~/Assets/plugins/moment/moment.min.js"></script>
+    <script src="~/Assets/plugins/jquery-ui/jquery-ui.js"></script>
+    <script src="~/Assets/plugins/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="~/Assets/plugins/jquery-knob/jquery.knob.js"></script>
+    <script src="~/Assets/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.js"></script>
+    <script src="~/Assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.js"></script>
+    <script src="~/Assets/dist/js/adminlte.js"></script>
+    <script src="~/Assets/dist/js/pages/jq-all.js"></script>
+    <script src="~/Assets/dist/js/custom-modify.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

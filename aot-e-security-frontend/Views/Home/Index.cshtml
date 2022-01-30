@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+    <div class="container login-top">
+        <div class="card-header">
+            <div class="text-center">
+                <h4><b>เข้าสู่ระบบ</b></h4>
+            </div>
+        </div>
+        <div class="card-login login-card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group mb-3">
+                        <input id="id-input" type="text" name="inp-name" value="" placeholder="อีเมล" class="form-control" />
+                    </div>
+                    <div class="form-group mb-3">
+                        <input id="id-input" type="text" name="inp-name" value="" placeholder="รหัสผ่าน" class="form-control" />
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="custom-control custom-checkbox col-md-12">
+                                <input class="custom-control-input" name="checkbox-name" type="checkbox" id="checkbox-id1" value="1">
+                                <label for="checkbox-id1" class="custom-control-label">จำไว้ในระบบ</label>
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-md-6 text-right">
+                            <div class="icheck-primary">
+                                <a asp-area="" asp-controller="Home" asp-action="ForgotPassword"><u>ลืมรหัสผ่าน</u></a>
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <div class="form-group blanks-buutton">
+                        <a class="btn btn-primary btn-add button-login" asp-area="" asp-controller="BookingCalendar" asp-action="Calendar">เข้าสู่ระบบ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /.login-card-body -->
+        @*<div class="col-12 card-body">
+            <div class="col-12">
+                <div class="row form-group mb-3">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-1 text-right">
+                        <label class="lable-login" for="id-input">อีเมล</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="id-input" type="text" name="inp-name" value="" placeholder="อีเมล" class="form-control" />
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row form-group mb-3">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 text-right">
+                        <label class="lable-login" for="id-input">รหัสผ่าน</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="id-input" type="text" name="inp-name" value="" placeholder="รหัส" class="form-control" />
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row form-group mb-2">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="icheck-primary">
+                                    <input type="checkbox" id="remember">
+                                    <label for="remember">
+                                        จำไว้ในระบบ
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <div class="icheck-primary">
+                                    <a href="#"><u>ลืมรหัสผ่าน</u></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row form-group mb-3">
+                    <div class="col-8">
+
+                    </div>
+                </div>
+            </div>
+        </div>*@
+    </div>

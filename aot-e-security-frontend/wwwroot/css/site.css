@@ -1,0 +1,241 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+label:not(.form-check-label):not(.custom-file-label) {
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'SUKHUMVITSET';
+    src: url('..//fonts/SUKHUMVITSET-MEDIUM.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    /* Margin bottom by footer height */
+    font-family: "SUKHUMVITSET", "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+/* Start CSS TAE */
+.button-group {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.card-header {
+    margin-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+    .card-header .card-box {
+        /*border-bottom: 1px solid #797979;*/
+        padding-bottom: 10px;
+        width: 100%;
+        display: inline-block;
+    }
+
+.card-popup {
+    padding: 0px 50px 0px 50px;
+}
+
+.img-height {
+    height: 50px;
+}
+
+.nav-dropdown-color {
+    background-color: #063E81 !important;
+}
+
+.dropdown-item:hover {
+    background-color: #0753af !important;
+}
+
+.nva-menu {
+    margin-right: .5rem;
+}
+
+.lable-login {
+    margin-right: 1rem;
+    margin-top: 5px;
+}
+
+.card-login {
+    padding: 20px 330px 0px 330px;
+}
+
+.button-login {
+    width:100%
+}
+
+.button-logins {
+    width:50%;
+}
+
+.button-login-register {
+    width: 20%
+}
+
+.blanks-buutton {
+    margin-top: 12px;
+}
+
+.login-top {
+    margin-top: 100px;
+}
+
+.fa-icon {
+    margin-right: 0.3rem;
+    margin-top: 4px;
+}
+
+.text-arrange {
+    display: flex;
+}
+
+.title-header {
+    font-size: 20px;
+    margin-top: 7px;
+}
+
+.message-popup-invoice {
+    margin-top: 20px;
+}
+
+.text-top {
+    margin-top: 10px;
+}
+
+.message-check {
+    margin-top: 8px
+}
+
+.title-frame {
+    padding: 0px 20px 0px 25px;
+}
+
+.frame-color {
+    border: 1px solid #797979;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.div-title {
+    margin: -12px 0px 10px 24px;
+    text-align: center;
+    width: 55%;
+    background-color: white;
+}
+
+.div-color-title4 {
+    margin: -12px 0px 10px 24px;
+    text-align: center;
+    width: 45%;
+    background-color: white;
+}
+
+.red-star:after {
+    color: red;
+    content: " *";
+}
+
+.logo {
+    margin-bottom: 5px;
+    padding: 0px 10px 0px 0px;
+}
+
+.table-bg {
+    background-color: #F2F2F2;
+}
+
+table.table.table-custom {
+    font-size: 15px !important;
+}
+
+    table.table.table-custom thead {
+        color: #fff;
+        background-color: #7f7f7f;
+    }
+/*.table.table-custom tbody {
+    background-color: #dadada;
+}*/
+.table.table-custom tbody a {
+    color: #333333;
+}
+/*.card-body {
+    padding: 5px 15px;
+}*/
+
+/*.card-header {
+    margin-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}*/
+/* End CSS TAE */

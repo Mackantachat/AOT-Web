@@ -1,0 +1,706 @@
+﻿@font-face {
+    font-family: 'SUKHUMVITSET';
+    src: url('../Assets/fonts/SUKHUMVITSET-MEDIUM.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: "SUKHUMVITSET", "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    color: #333333 !important;
+}
+[class*=sidebar-dark-] {
+    background-color: rgba(12,34,57,1);
+}
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
+    background-color: #053e81;
+    color: #fff;
+    border-radius: 0;
+}
+
+label.required:after {
+    color: red;
+    content: ' *';
+    display: contents;
+}
+/* Content All */
+.form-group {
+    padding-left: 0;
+}
+
+.form-control {
+    border-color: #797979;
+}
+
+.nav-border-l {
+    border-left: 1px solid white;
+    padding-right: 7px;
+}
+.container-fluid {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.card-header {
+    border-bottom:none;
+}
+.card-hr .card-border {
+    border-bottom: 1px solid #797979 !important;
+}
+.card-header h5 {
+    color: #074a9a;
+    padding-top: .5rem;
+}
+.img-nav-avatar {
+    height:32px;
+    width: auto;
+    margin-top: 0px;
+}
+.navbar-blue {
+    background-color: #063e81 !important;
+}
+.navbar-blue a.nav-link {
+    color: aliceblue;
+    padding-top: 0;
+    font-size: 1.65rem;
+}
+.brand-link.img-logo {
+    padding: 0px 10px 0 10px;
+    text-align: center;
+    background-color: aliceblue;
+}
+.brand-link.img-logo img {
+    width: auto;
+    max-height: 55px;
+}
+
+table.table.table-custom {
+    font-size: 15px !important;
+}
+table.table.table-custom thead {
+    color: #fff;
+    background-color: #7f7f7f;
+}
+/*.table.table-custom tbody {
+    background-color: #dadada;
+}*/
+.table.table-custom tbody a {
+    color: #333333;
+}
+/* Font Style */
+.f1rem {
+    font-size: 1rem !important;
+}
+
+/* CSS TAE */
+/*.tr-color:nth-child(even) {
+    background-color: #e7f4f7;
+}*/
+.ui-menu {
+    margin: 0px 0px 0px 20px;
+}
+
+.advanced-search {
+    padding: 50px 0px 0px 10px;
+}
+
+.check-blacklist {
+    margin: 35px 0px 0px 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.div-color-title {
+    margin: -12px 0px 10px 24px;
+    text-align: center;
+    width: 65%;
+    background-color: white;
+}
+
+.div-color-title2 {
+    margin: -12px 0px 5px 5px;
+    text-align: center;
+    width: 45%;
+    background-color: white;
+}
+
+.div-color-title3 {
+    margin: -12px 0px 10px -4px;
+    text-align: center;
+    width: 54%;
+    background-color: white;
+}
+
+.color-test {
+    background-color:#ffb2b2;
+}
+.color-test2 {
+    background-color: #4183b1;
+    color:white;
+}
+
+
+.red-star:after {
+    color: red;
+    content: " *";
+}
+
+.version {
+    color: #f3f3f3;
+    margin-top: -48px;
+}
+
+.table-bg {
+    background-color: #F2F2F2;
+}
+
+.checkbox-top {
+    margin-top: 3px;
+}
+
+.card-hr {
+    padding: 0 20px;
+}
+
+.card-hr-title {
+    padding: 0px 12px 10px 12px;
+}
+
+.card-border-title {
+    border-bottom: 1px solid #797979;
+}
+
+.card-header-title {
+    padding: 12px 12px 12px 12px;
+}
+
+.frame {
+    border: 1px solid #797979;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.frame-color {
+    border: 1px solid #797979;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+.frame-hr-margin {
+    margin: 8px 0px 12px 0px;
+    border: 0.5px solid #797979;
+    padding: 0px 0px 0px 2px
+}
+
+.frame-in {
+    padding: 0px 25px 0px 25px;
+}
+
+.frame-title-all {
+    margin-top: -2px;
+    border: 0.5px solid #797979;
+    padding: 0px 0px 0px 2px
+}
+.frame-hr-top {
+    border: 0.5px solid #797979;
+}
+.frame-title-top {
+    margin: 7px 0px 20px 0px;
+    border: 0.5px solid #797979;
+}
+
+.frame-color-only {
+    border: 0.5px solid #797979;
+}
+
+.frame-between {
+    margin-top: -6px;
+}
+
+.image-inp {
+    padding: 50px 0px 50px 0px;
+}
+
+.image-User {
+    border: 1px solid black;
+    width:100%;
+    height:100%;
+}
+
+.image-padding {
+    padding: 0px 5px 15px 5px;
+}
+
+.text-color {
+    background-color: #ebebeb;
+}
+
+.button-all {
+    width:145px;
+}
+
+.button-colorGray {
+    background-color: #d2d2d2;
+    color: white;
+}
+
+.button-Permission {
+    margin: 0px 0px 0px 6px;
+    width: 112px;
+}
+
+.button-AddData {
+    margin: 0px 0px 0px 6px;
+    width: 84px;
+}
+
+.button-history {
+    margin: 0px 0px 10px 0px;
+    width: 100%;
+    background-color: #dbf7fb;
+}
+.button-add {
+    margin: 0px 0px 10px 0px;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.button-save {
+    width: 100px;
+}
+
+.button-full {
+    width: 100%;
+}
+
+.button-couple {
+    width:110px;
+}
+
+.button-search {
+    margin-top: 7px;
+}
+
+.button-add-personal {
+    width: 210px;
+}
+
+.button-add-all {
+    width: 170px;
+}
+
+.button-size {
+    width: 155px;
+}
+
+.button-margin-top {
+    margin-top: 2px;
+}
+
+.button-four {
+    margin: 15px -7px 15px -7px;
+}
+
+.button-lower {
+    margin: 0px 0px 40px 0px;
+}
+
+.personal-row {
+    padding: 0px 0px 16px 32px;
+}
+
+.lines-sides {
+    border-left: 1.5px solid #bababa;
+}
+
+.title-paragraph {
+    margin-top: -12px;
+    padding: 0px 0px 0px 22px;
+}
+
+.title-size {
+    font-size: 16px;
+    color: #074a9a;
+}
+
+.title-size2 {
+    font-size: 16px;
+}
+
+.title-center {
+    margin-top: 11px;
+    margin: 0px 0px 10px 0px;
+}
+
+.title-margin-top30 {
+    margin-top: 30px;
+}
+
+.title-AddUser {
+    margin-top: 10px;
+}
+
+.title-top {
+    margin-top: -16px;
+}
+
+.texts-colors {
+    color: #005dbc;
+    margin-top: 8px;
+    font-size: 20px;
+}
+.text-top {
+    margin-top: 10px;
+}
+
+.text-sizes {
+    font-size:19px;
+}
+
+.text-title-size {
+    font-size: 18px;
+}
+
+.text-personal {
+    margin: 9px 0px 0px 6px;
+}
+
+.title-modal {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.title-modal-size {
+    font-size: 18px;
+}
+
+.title-modal-top {
+    margin-top: 25px;
+}
+
+.message-popup-invoice {
+    margin-top: 20px;
+}
+
+.export-message {
+    margin: 35px 4px 0px -8px;
+}
+
+.title-space {
+    padding: 10px 0px 0px 0px;
+}
+
+.inp-center {
+    text-align: center
+}
+
+.inp-textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.textarea-popup {
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;
+}
+
+.inp-radio {
+    margin: 18px 80px 0px 0px;
+}
+
+.comment {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+}
+
+.fileUpload {
+    position: relative;
+    font-size: 12px;
+    overflow: hidden;
+    border: 0.5px solid #979797;
+}
+
+    .fileUpload input.upload {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+.show-data {
+    width:20%;
+}
+.add-upload {
+    font-size: 15px;
+    width: 100px;
+}
+.set-hr {
+    margin: 0px 16px 10px 16px;
+    border-top: 1px solid;
+    border: 0.5px solid #797979;
+}
+
+.set-check {
+    margin-top: 12px;
+}
+
+.document-hr {
+    margin-top: 0px;
+}
+
+.hr-title {
+    margin: 0px 0px 0px 0px;
+    background-color: black;
+}
+
+.document-title {
+    padding: 32px 0px 20px 0px;
+}
+
+.popup-title-right {
+    padding: 14px 8px 12px 0px;
+}
+
+.popup-title {
+    padding: 14px 0px 12px 2px;
+}
+
+.titel-document {
+    margin-top: 22px;
+}
+
+.subcontract-AddPersonal {
+    margin: 8px -30px 0px -30px;
+}
+
+.or-AddPersonal {
+    margin: 9px 0px 0px 30px;
+}
+
+fa-userPersonal {
+    margin-top: -10px;
+}
+
+.show-data {
+    background-color: #ffffff;
+    border: 0px solid #ffffff;
+}
+
+.nav-detil {
+    background-color: #c7e4f7;
+    color: black;
+    border-radius: 4px;
+    margin-top: 8px;
+    text-align: center;
+    padding: 10px;
+}
+
+.check-size {
+    font-size:12px;
+    margin-top:10px;
+}
+
+.check-condition {
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.number-addgroup {
+    width: 30px;
+    height: 30px;
+    background-color: #01229b;
+    border-radius: 100%;
+    color: white;
+    border: 2px solid #d6d6d6;
+    padding: 1px 0px 0px 9px;
+}
+
+.input-addgroup {
+    margin-left: -122px;
+}
+
+.label-addGroup {
+    margin-top: 7px;
+}
+
+.row-addgroup {
+    margin-top: 15px;
+}
+
+.row-button {
+    margin: 10px 0px 25px 0px;
+}
+.row-button2 {
+    width: 185px;
+}
+
+.row-radio {
+    margin: 20px 0px 66px 0px;
+}
+
+.row-drop-radio {
+    margin: 20px 63px 66px 8px;
+}
+
+.radio-search {
+    margin: -12px 0px 10px 24px;
+    background-color: white;
+    text-align: center;
+}
+
+.frame-pills {
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.row-report {
+    margin-top: 36px;
+}
+
+.cross-number50 {
+    margin: 7px -42px 0px -42px;
+}
+
+.ul-size {
+    font-size: 14px;
+}
+
+.collapsed-hr {
+    padding: 10px 0px -1px 18px;
+}
+
+/* Check CSS */
+/* The container */
+.container-check {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    /* Hide the browser's default checkbox */
+    .container-check input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container-check:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-check input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container-check input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-check .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+/* End Check CSS */
+
+.card-header {
+    margin-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+    .card-header .card-box {
+        border-bottom: 1px solid #797979;
+        padding-bottom: 10px;
+        width: 100%;
+        display: inline-block;
+    }
+
+        .card-header .card-box b {
+            vertical-align: sub;
+            font-size: 16px;
+        }
+
+.button-group {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.card-body {
+    padding: 5px 15px;
+}
+
+    .card-body .card-area {
+        border: 1px solid #797979;
+        display: flex;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .card-body .card-title {
+        border-bottom: 1px solid #797979;
+        font-size: 16px;
+        width: 100%;
+        display: inline-block;
+        font-weight: bold;
+    }
+
+    .card-body .card-description {
+        width: 100%;
+        margin: 15px 0 0 0;
+    }
+
+.table-option {
+    color: #797979;
+}
+
+.td-checkbox {
+    width: 10px;
+}

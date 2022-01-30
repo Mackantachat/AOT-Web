@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "aot-e-security.fullname" . }}
+  labels:
+    app: {{ template "aot-e-security.name" . }}
+    chart: {{ template "aot-e-security.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ template "aot-e-security.name" . }}
+    release: {{ .Release.Name }}

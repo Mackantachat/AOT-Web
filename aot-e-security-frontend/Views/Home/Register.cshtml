@@ -1,0 +1,189 @@
+﻿
+@{
+    ViewData["Title"] = "Register";
+}
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel-group">
+                <div class="col-12 card-body">
+                    <div class="card-header">
+                        <div class="text-center">
+                            <h4><b>ลงทะเบียน</b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 card-body">
+                    <div class="message-popup-invoice">
+                        <div class="col-12 frame-color title-frame">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="div-color-title4">
+                                        <label>รายละเอียดผู้รับผิดชอบ</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-2">
+                                    <label for="id-input">รหัสบุคคล</label>
+                                    <input id="id-input" type="text" name="inp-name" value="" class="form-control" />
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="type-person" class="red-star">ประเภทบุคคล</label>
+                                    <select id="type-person" name="select-name" class="form-control" required>
+                                        <option value="">กรุณาเลือกประเภทบุคคล</option>
+                                        <option value="1">ข้อมูล 1</option>
+                                        <option value="2">ข้อมูล 2</option>
+                                    </select>
+                                </div>
+                                <div class="custom-control custom-radio col-md-2 text-center message-check">
+                                    <label>&nbsp;</label><br />
+                                    <input class="custom-control-input" type="radio" id="radio-id1" name="customRadio">
+                                    <label for="radio-id1" class="custom-control-label">บัตรประชาชน</label>
+                                </div>
+                                <div class="custom-control custom-radio col-md-2 text-center message-check">
+                                    <label>&nbsp;</label><br />
+                                    <input class="custom-control-input" type="radio" id="radio-id2" name="customRadio">
+                                    <label for="radio-id2" class="custom-control-label">พาสปอร์ต</label>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="number-card" class="red-star">เลขที่บัตร</label>
+                                    <input id="number-card" type="text" name="inp-name" value="" class="form-control" required />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-3">
+                                    <label for="prefix" class="red-star">คำนำหน้า</label>
+                                    <select id="prefix" name="select-name" class="form-control" required>
+                                        <option value="">กรุณาเลือกคำนำหน้า</option>
+                                        <option value="1">ข้อมูล 1</option>
+                                        <option value="2">ข้อมูล 2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="name" class="red-star">ชื่อ</label>
+                                    <input id="name" type="text" name="inp-name" value="" class="form-control" required />
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="id-input">ชื่อกลาง</label>
+                                    <input id="id-input" type="text" name="inp-name" value="" class="form-control" />
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="surname" class="red-star">นามสกุล</label>
+                                    <input id="surname" type="text" name="inp-name" value="" class="form-control" required />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-2">
+                                    <label for="exampleInputEmail1">ชื่อเล่น/ฉายา</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="sex" class="red-star">เพศ</label>
+                                    <select id="sex" name="select-name" class="form-control" required>
+                                        <option value="">กรุณาเลือกเพศ</option>
+                                        <option value="1">ข้อมูล 1</option>
+                                        <option value="2">ข้อมูล 2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="exampleInputEmail1">วัน/เดือน/ปี เกิด</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" required>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="exampleInputEmail1">อายุ</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="exampleInputEmail1">เชื้อชาติ</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" required>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="exampleInputEmail1">สัญชาติ</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-2">
+                                    <label for="exampleInputEmail1" class="red-star">โทรศํพท์มือถือ</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" required>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="exampleInputEmail1">สถานภาพ</label>
+                                    <select id="exampleInputEmail1" name="select-name" class="form-control">
+                                        <option value="">กรุณาเลือกสถานภาพ</option>
+                                        <option value="1">ข้อมูล 1</option>
+                                        <option value="2">ข้อมูล 2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="exampleInputEmail1">แผลเป็น/ตำหนิ</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1">
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="exampleInputEmail1" class="red-star">ประเภทบัตรประจำตัว</label>
+                                    <select id="exampleInputEmail1" name="select-name" class="form-control" required>
+                                        <option value="">กรุณาเลือกประเภทบัตรประจำตัว</option>
+                                        <option value="1">ข้อมูล 1</option>
+                                        <option value="2">ข้อมูล 2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="exampleInputEmail1">หมายเลขบัตร</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-2">
+                                    <label for="exampleInputEmail1">สีผม</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="exampleInputEmail1">สีตา</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1">
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="exampleInputEmail1">ชื่อบิดา</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1">
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="exampleInputEmail1">ชื่อมารดา</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-8">
+                                    <label for="exampleInputEmail1" class="red-star">ข้อมูลที่อยู่ตามทะเบียนราษฎร์</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-3">
+                                    <label for="exampleInputEmail1" class="red-star">อีเมล</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" required>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="exampleInputEmail1" class="red-star">รหัสผ่าน</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" required>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="exampleInputEmail1" class="red-star">ยืนยันรหัสผ่าน</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 card-body">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <a class="btn btn-primary btn-add button-login-register" asp-area="" asp-controller="Home" asp-action="ConfirmPassword">ลงทะเบียน</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

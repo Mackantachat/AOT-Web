@@ -1,0 +1,243 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section style {
+    <link rel="stylesheet" href="~/plugins/jsgrid/jsgrid.css">
+    <link rel="stylesheet" href="~/plugins/jsgrid/jsgrid-theme.css">
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel-group">
+                <div class="col-12 card-header">
+                    <div class="col-12 card-box">
+                        <div class="fa-pull-left text-left title-header"><b><i class="fa fa-archive"></i> ประวัติการจองที่นั่งสอบ/ที่นั่งอบรม</b></div>
+                        <div class="button-group">
+                            <button type="button" href="#add_action" class="btn btn-primary btn-add" data-links="~/Controller/Function" data-toggle="modal" data-target="#modal-confirm">ยกเลิกการจอง</button>
+                        </div>
+                    </div>
+                    <div class="col-12 card-body">
+                        <div class="table-responsive">
+                            <table class="table table-custom">
+                                <thead>
+                                    <tr>
+                                        <td style="width: 2%">
+                                            @*<input class="checkbox-top" type="checkbox" name="chk-all" />*@
+                                        </td>
+                                        <td class="text-center" style="width: 2%">No.</td>
+                                        <td class="text-center" style="width: 5%">วันที่</td>
+                                        <td class="text-center" style="width: 10%">เลขที่บัตรประชาชน/พาสปอร์ต</td>
+                                        <td class="text-center" style="width: 5%">ชื่อ-นามสกุล</td>
+                                        <td class="text-center" style="width: 20%">หลักสูตร</td>
+                                        <td class="text-center" style="width: 5%">เกณฑ์ที่ผ่าน</td>
+                                        <td class="text-center" style="width: 5%">จำนวนที่นั่งทั้งหมด</td>
+                                        <td class="text-center" style="width: 5%"></td>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-bg">
+                                    @{
+                                        for (var i = 1; i <= 1; i++)
+                                        {
+                                            <tr>
+                                                <td style="width: 2%">
+                                                    <input class="checkbox-top" type="checkbox" name="chk-all" />
+                                                </td>
+                                                <td class="text-center">1</td>
+                                                <td>403770</td>
+                                                <td>นางสาว</td>
+                                                <td>สมศรี</td>
+                                                <td>ยินดี</td>
+                                                <td class="text-center">1111111111111</td>
+                                                <td>RTS (2003)</td>
+                                                <td class="text-center">
+                                                    <a href="#"><i class="fas fa-search"></i></a>
+                                                    <a href="#"><i class="fas fa-print"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 2%">
+                                                    <input class="checkbox-top" type="checkbox" name="chk-all" />
+                                                </td>
+                                                <td class="text-center">2</td>
+                                                <td>403779</td>
+                                                <td>นาย</td>
+                                                <td>มุ่งหมาย</td>
+                                                <td>ทำร้าย</td>
+                                                <td class="text-center">2222222222222</td>
+                                                <td>RTS (2003)</td>
+                                                <td class="text-center">
+                                                    <a href="#"><i class="fas fa-search"></i></a>
+                                                    <a href="#"><i class="fas fa-print"></i></a>
+                                                </td>
+                                            </tr>
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                @*<div class="col-12 card-body">
+                        <div class="table-responsive" id="data-TablePermanentPersonalCard"></div>
+                    </div>*@
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal ยกเลิก-->
+<div class="modal fade bd-example-modal-lg" id="modal-confirm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="col-12 card-header">
+                <div class="col-12 card-box">
+                    <div class="fa-pull-left text-left title-header"><b>ยกเลิกการจองที่นั่งสอบ/ที่นั่งอบรม</b></div>
+                    <div class="button-group">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 card-body card-popup">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label>เลขบัตรประจำตัวประชาชน</label>
+                    </div>
+                    <div class="col-md-9">
+                        <div>12345678910111213</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label>ชื่อ - นามสกุล</label>
+                    </div>
+                    <div class="col-md-9">
+                        <div>สมชาย ยืนยัน</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label>หลักสูตร</label>
+                    </div>
+                    <div class="col-md-9">
+                        <div>ทบทวน-ทดสอบหลักเกณฑ์และวิธีปฏิบัติสำหรับผู้ขับขี่ยานพาหนะในเขตการบิน (ครบ 3 ปี)</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label>สถานะ</label>
+                    </div>
+                    <div class="col-md-9">
+                        <div>จองเสร็จสิ้น</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 card-body">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button href="#" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#modal-confirms">ยกเลิกการจอง</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal ยกเลิกอีกครั้ง-->
+<div class="modal fade bd-example-modal-lg" id="modal-confirms" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="col-12 card-header">
+                <div class="col-12 card-box">
+                    <div class="fa-pull-left text-left title-header"><b>ยกเลิกการจองที่นั่งสอบ/ที่นั่งอบรม</b></div>
+                    <div class="button-group">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 card-body">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button href="#" class="btn btn-primary" data-dismiss="modal">ยืนยัน</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/plugins/jsgrid/jsgrid.js"></script>
+    <script>
+        $(() => {
+            $.ajax("@Url.Action("", "api/Person")", {
+                method: 'GET',
+                dataType: "json",
+                data: { name: "" },
+                success: function (res) {
+                    return res;
+                }
+            }).then((resp) => {
+                $("#data-TablePermanentPersonalCard").jsGrid({
+                    sorting: true,
+                    paging: true,
+
+                    data: resp,
+
+                    fields: [
+                        { name: "id", title: "No.", type: "text", width: 10, align: "center" },
+                        { name: "", title:"รหัสประเภทบัตร บุคคลถาวร", type: "text", width: 20, align: "center"},
+                        { name: "", title:"ชื่อประเภทบัตร บุคคลถาวร", type: "text", width: 20, align: "center"},
+                        { name: "", title:"รายละเอียดประเภทบัตร บุคคลถาวร", type: "text", width: 30, align: "center"},
+                        { name: "", title:"สถานะใช้งาน", type: "text", width: 10, align: "center"},
+                        { type: "control", width: 10, SearchButton: false, deleteButton: false,
+                             itemTemplate: function(value, item) {
+                                var $result = jsGrid.fields.control.prototype.itemTemplate.apply(this, arguments);
+
+                                var $customSearchButton = $("<button>").attr({class: "customGridSearchbutton jsgrid-button jsgrid-search-button"})
+                                  .click(function(e) {
+                                    alert("ลำดับที่: " + item.id);
+                                    e.stopPropagation();
+                                  });
+
+                                 var $customEditButton = $("<button>" , { 'id': 'button-Edit' }).attr({class: "customGridEditbutton jsgrid-button jsgrid-edit-button"})
+                                    .click(function (e) {
+                                        alert("คุณต้องการแก้ไขข้อมูลที่ของ: " + item.name);
+                                    e.stopPropagation();
+                                  });
+
+                               var $customDeleteButton = $("<button>"  , { 'id': 'button-Delete' }).attr({class: "customGridDeletebutton jsgrid-button jsgrid-delete-button"})
+                                   .click(function (e) {
+                                       alert("คุณต้องการลบ: " + item.name);
+                                  e.stopPropagation();
+                                });
+
+                                 return $("<div>").append($customSearchButton).append($customEditButton).append($customDeleteButton);
+                                //return $result.add($customButton);
+                            },
+                        }
+
+                    ],
+                    pagerFormat: "หน้า: {first} {prev} {pages} {next} {last}    {pageIndex} of {pageCount}",
+                    pagePrevText: "ก่อนหน้า",
+                    pageNextText: "หน้าถัดไป",
+                    pageFirstText: "หน้าแรก",
+                    pageLastText: "หน้าสุดท้าย"
+                });
+            });
+
+        })
+    </script>
+}
+
+
